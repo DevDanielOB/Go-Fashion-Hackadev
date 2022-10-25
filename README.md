@@ -1,6 +1,6 @@
 # PROJETO HACKADEV
 
-Link deploy: https://main--gofashion-hackadev.netlify.app/
+Link deploy:
 
 ## Objetivo
 1. Avaliar a capacidade de trabalho em equipe.
