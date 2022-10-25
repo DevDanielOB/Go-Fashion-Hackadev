@@ -11,7 +11,9 @@ function home() {
     <Frete/>{/* 
     <Carrossel/> */}
     <div className="App">
-      {content.map((produto,i) => (       
+    {/* filter((produto) => produto.categoria === "Vestuário C") */}
+      {content.map((produto,i) => (
+           
           <Products
             imagem={produto.imagem}
             name={produto.name}
@@ -27,7 +29,6 @@ function home() {
             id={produto.id}
             key={i}
           />
-        
       ))}
     </div>
     <Banner/>

@@ -5,6 +5,7 @@ import contentNovidades from "../../Novidades/contentNovidades";
 import { useStateContext } from "../../../context/StateContext";
 import Cabide from '../../../img/iconsProvador/Cabide.svg'
 import Metrica from '../../../img/iconsProvador/Metrica.svg'
+import {Products} from '../home/products'
 
 export const Produtos = () => {
   const {
@@ -26,6 +27,7 @@ export const Produtos = () => {
   }
 
   return (
+    <>
     <div className="navbar-container1">
       {idNovo.map((item) => (
         <div key={item.key} className="product-detail-container1">
@@ -142,7 +144,30 @@ export const Produtos = () => {
           </div>
         </div>
       ))}
+      <div className="Rec">
+    
+      {content.filter((item) => item.categoria === "Vestuário C").map((produto,i) => (
+           
+          <Products
+            imagem={produto.imagem}
+            name={produto.name}
+            price={produto.price}
+            totalVendindos={produto.totalVendindos}
+            fimPromocao={produto.fimPromocao}
+            rating={produto.rating}
+            promo={produto.promo}
+            valorDesconto={produto.valorDesconto}
+            color={produto.color}
+            colorHex={produto.colorHex}
+            todosProdutos={produto}
+            id={produto.id}
+            key={i}
+          />
+      ))}
     </div>
+    </div>
+
+    </>
   );
 };
 
