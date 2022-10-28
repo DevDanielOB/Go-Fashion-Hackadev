@@ -32,6 +32,7 @@
     color: #261E1E;
 }
 
+
 .product-detail-container1 .product-detail-image1 {
     width: 500px;
     height: 500px;
@@ -419,4 +420,18 @@ border-radius: 100%;
 
 .metrica{
     margin-left: 5px;
+}
+
+.rec {
+    display: flex-box;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    flex-direction: row;
+    
+}
+
+.title-rec {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    
 }
