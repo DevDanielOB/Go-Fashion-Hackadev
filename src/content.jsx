@@ -25,6 +25,7 @@ const productData = [
     rating: 5,
     fimPromocao: 10,
     totalVendindos: 99,
+    recomendado: 1,
   },
   {
     id: 2,
@@ -81,6 +82,7 @@ const productData = [
     rating: 4,
     fimPromocao: 27,
     totalVendindos: 101,
+    recomendado: 1,
   },
  {
     id: 6,
@@ -109,6 +111,7 @@ const productData = [
     rating: 4,
     fimPromocao: 23,
     totalVendindos: 88,
+    recomendado: 1,
   },
    {
     id: 8,
@@ -137,6 +140,7 @@ const productData = [
     rating: 4,
     fimPromocao: 21,
     totalVendindos: 80,
+    recomendado: 1,
   },  
   {
   id: 10,
@@ -151,6 +155,7 @@ const productData = [
   rating: 4,
   fimPromocao: 21,
   totalVendindos: 80,
+  recomendado: 1,
 },  
    {
    id: 11,
@@ -165,6 +170,7 @@ const productData = [
    rating: 4,
    fimPromocao: 21,
    totalVendindos: 80,
+   recomendado: 1,
  },
    {
    id: 12,
@@ -179,6 +185,7 @@ const productData = [
    rating: 4,
    fimPromocao: 21,
    totalVendindos: 80,
+   recomendado: 1,
  } ,
 ];
 export default productData;

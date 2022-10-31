@@ -7,6 +7,7 @@ import Cabide from "../../../img/iconsProvador/Cabide.svg";
 import Metrica from "../../../img/iconsProvador/Metrica.svg";
 import { Recommended } from "./recommended";
 
+
 export const Produtos = () => {
   const {
     /* decQty, incQty ,*/ qty,
@@ -18,6 +19,7 @@ export const Produtos = () => {
 
   const id = `${localStorage.getItem("id").replace(/"/g, " ")}`;
   let idNovo = [];
+  
 
   if (id <= 12) {
     idNovo = content.filter((item) => item.id === parseInt(id));
@@ -165,7 +167,7 @@ export const Produtos = () => {
         <div className="rec">
           <div className="title-rec"><b>Outros clientes estão comprando:</b></div>
           {content
-            .filter((item) => item.categoria === "Vestuário C")
+            .filter((item) => item.recomendado === 1)
             .map((produto, i) => (
               <Recommended
                 imagem={produto.imagem}

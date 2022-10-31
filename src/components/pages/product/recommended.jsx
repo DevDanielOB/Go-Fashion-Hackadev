@@ -6,6 +6,8 @@ import { useStateContext } from "../../../context/StateContext";
 export function Recommended(prod) {
   const { qty, onAdd, screenProduct } = useStateContext();
 
+
+
   return (
     <div className="productList">
       <div key={prod.id} className="productCard">
